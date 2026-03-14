@@ -1,12 +1,12 @@
 services:
-  weather-assistant:
+  weather-agent:
     build: .
-    container_name: weather-assistant
+    container_name: weather-agent
     environment:
       - OPENAI_API_KEY=${OPENAI_API_KEY}
     stdin_open: true
     ports:
-      - "5000"
+      - "5000:5000"
     tty: true
     networks:
       - agents-net

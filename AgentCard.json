@@ -1,0 +1,40 @@
+{
+    "protocolVersion": "0.2.9",
+    "name": "Weather Agent",
+    "description": "A friendly weather assistant that provides current weather information, multi-day forecasts, and temperature conversions for various cities.",
+    "url": "http://localhost:5000/",
+    "preferredTransport": "JSONRPC",
+    "provider": {
+        "organization": "praveen0raj",
+        "url": "https://github.com/praveen0raj/weather-agent"
+    },
+    "iconUrl": "http://localhost:5000/icon.png",
+    "version": "1.0.0",
+    "documentationUrl": "http://localhost:5000/docs",
+    "capabilities": {
+        "streaming": false,
+        "pushNotifications": false,
+        "stateTransitionHistory": true,
+        "chat_agent": true
+    },
+    "securitySchemes": {},
+    "security": [],
+    "defaultInputModes": ["text/plain"],
+    "defaultOutputModes": ["text/plain"],
+    "skills": [
+        {
+            "name": "get_weather",
+            "description": "Get current weather information for a city"
+        },
+        {
+            "name": "get_weather_forecast",
+            "description": "Get multi-day weather forecast for a city"
+        },
+        {
+            "name": "convert_temperature",
+            "description": "Convert temperatures between Celsius, Fahrenheit, and Kelvin"
+        }
+    ],
+    "supportsAuthenticatedExtendedCard": false,
+    "signatures": []
+}

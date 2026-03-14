@@ -13,7 +13,7 @@ from models import JsonRpcRequest, JsonRpcResponse, Message, Task, TaskStatus, A
 
 # Setup logging
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger("agent-template")
+logger = logging.getLogger("weather-agent")
 
 app = FastAPI()
 
